@@ -98,6 +98,17 @@ const AccountDeletion = () => {
   return (
     <div className="App">
       <h2>Delete account and all the data stored?</h2>
+      <div className="info">
+        <p>App name - Vaar: ExpenseTracker</p>
+        <p>Developer - Vaibhav Gera (trackerapp269@gmail.com)</p>
+        <p>
+          Once the request is processed all the data entered(including expense
+          data) by the user and email id will be deleted from our side. Please
+          make sure you have the backup of the data contained in the app before
+          requesting for the account deletion. You will get the confirmation
+          email once the account and all related data is deleted.
+        </p>
+      </div>
       <form onSubmit={handleSubmit}>
         <div>
           <p className={apiStatus?.success ? "success" : "error"}>
